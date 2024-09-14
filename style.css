@@ -45,27 +45,27 @@
 .gravity p {
   color: #fff;
   font-family: "Raleway", sans-serif;
-  font-size: 2.3rem; /* Aumentado en un 15% desde 2rem */
+  font-size: 2.4rem; /* Aumentado en un 15% desde 2rem */
   font-weight: 600;
   margin: 10px 0;
 }
 
 /* Párrafo 2 */
 #parrafo2 {
-  font-size: 2.07rem; /* Aumentado en un 15% desde 1.8rem */
+  font-size: 2.2rem; /* Aumentado en un 15% desde 1.8rem */
 }
 
 /* Sección de email */
 .email {
   text-align: center;
-  padding-top: 50px;
+  padding-top: 60px;
   z-index: 100;
 }
 
 .email p {
   color: #f3efef;
   font-family: "Raleway", sans-serif;
-  font-size: 1.5rem; /* Aumentado en un 15% desde 1.3rem */
+  font-size: 1.7rem; /* Aumentado en un 15% desde 1.3rem */
   font-weight: 600;
 }
 
