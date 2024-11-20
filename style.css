@@ -1,0 +1,128 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Wrapper principal */
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  background-image: url(img/bg-1080.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 40;
+  height: 100vh;
+}
+
+/* Fondo opaco */
+.opacity {
+  background: rgba(79, 70, 62, 0.5);
+  height: 100%;
+  position: absolute;
+  width: 100%;
+  z-index: -1;
+}
+
+/* Contenedor principal */
+.gravity {
+  text-align: center;
+  z-index: 10;
+}
+
+/* Logo reducido en tamaño (15% menos) */
+.gravity .logo {
+  max-width: 100%;
+  width: 765px; /* Reducido en un 15% del tamaño anterior de 900px */
+  margin-bottom: 20px;
+}
+
+/* Texto general aumentado en 15% */
+.gravity p {
+  color: #fff;
+  font-family: "Raleway", sans-serif;
+  font-size: 2.4rem; /* Aumentado en un 15% desde 2rem */
+  font-weight: 600;
+  margin: 10px 0;
+}
+
+/* Párrafo 2 */
+#parrafo2 {
+  font-size: 2.2rem; /* Aumentado en un 15% desde 1.8rem */
+}
+
+/* Sección de email */
+.email {
+  text-align: center;
+  padding-top: 60px;
+  z-index: 100;
+}
+
+.email p {
+  color: #f3efef;
+  font-family: "Raleway", sans-serif;
+  font-size: 1.7rem; /* Aumentado en un 15% desde 1.3rem */
+  font-weight: 600;
+}
+
+/* Sección de iconos sociales */
+.social-icon {
+  margin-top: 20px;
+}
+
+.icon {
+  width: 120px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon i {
+  color: #6dc0bf;
+  font-size: 3rem;
+  padding: 9px;
+}
+
+/* Media queries para tamaños más pequeños */
+@media (max-width: 768px) {
+  /* Ajustes para pantallas medianas */
+  .gravity .logo {
+    width: 59.5%; /* Ajuste proporcional del logo en pantallas medianas (15% menos) */
+  }
+
+  .gravity p {
+    font-size: 2.53rem; /* Aumentado en un 15% desde 2.2rem */
+  }
+
+  #parrafo2 {
+    font-size: 2.3rem; /* Aumentado en un 15% desde 2rem */
+  }
+
+  .email p {
+    font-size: 1.61rem; /* Aumentado en un 15% desde 1.4rem */
+  }
+}
+
+@media (max-width: 480px) {
+  /* Ajustes para pantallas pequeñas */
+  .gravity .logo {
+    width: 76.5%; /* Ajuste proporcional del logo en pantallas pequeñas (15% menos) */
+  }
+
+  .gravity p {
+    font-size: 2.07rem; /* Aumentado en un 15% desde 1.8rem */
+  }
+
+  #parrafo2 {
+    font-size: 1.84rem; /* Aumentado en un 15% desde 1.6rem */
+  }
+
+  .email p {
+    font-size: 1.38rem; /* Aumentado en un 15% desde 1.2rem */
+  }
+}
